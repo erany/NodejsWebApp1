@@ -1,0 +1,20 @@
+﻿<div class="customer view indent">
+    <div class="container" ng-controller="customerscontroller">
+        <header>
+            <h3><span class="glyphicon glyphicon-user">חשבוניות / קבלות</span></h3>
+        </header>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="navbar">
+                    <ul class="nav navbar-nav">{{title}}</ul>
+                </div>
+            </div>
+			 <li ng-repeat='employee in receptionList'> 
+				<p>{{employee.firstName}}  {{employee.lastName}}</p>
+				<p> {{employee.title}}</p>
+			</li> 
+			
+			
+        </div>
+    </div>
+</div>

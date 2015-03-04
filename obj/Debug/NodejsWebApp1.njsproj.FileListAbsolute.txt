@@ -1,0 +1,2 @@
+C:\Users\migdal\Documents\Visual Studio 2013\WebSites\NodejsWebApp1\obj\Debug\NodejsWebApp1.njsprojResolveAssemblyReference.cache
+C:\Users\migdal\Documents\Visual Studio 2013\WebSites\NodejsWebApp1\bin\Microsoft.NodejsTools.WebRole.dll

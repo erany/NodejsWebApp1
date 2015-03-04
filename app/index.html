@@ -1,0 +1,65 @@
+﻿<html lang="en" ng-app="app">
+<head>
+    <title>My HTML File</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/animations.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  
+</head>
+<body ng-cloak>
+
+    <header class="navbar navbar-inner navbar-fixed-top" ng-controller="homecontroller" dir="rtl">
+        <nav class="container">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/">
+                <img src="pics/people.png" alt="logo">
+                <span class="appTitle">{{ title }}</span>
+            </a>
+            <div class="nav-container" data-collapse="isCollapsed">
+                <!-- With menu-highlighter directive -->
+                <ul class="nav navbar-nav nav-pills navBarPadding">
+                    <!--data-menu-highlighter data-highlight-class-name="active">-->
+                    <li><a href="#/customers">לקוחות</a></li>
+                    <li><a href="#/orders">משכנתא</a></li>
+                    <li><a href="#/about">עלינו</a></li>
+                    <li id="nav-login" data-ng-click="loginOrOut()">
+                        <!-- href not used but needed to compare against path in menu-highlighter -->
+                        <a data-href="#/login">{{ loginLogoutText }}</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="slide-animation-container">
+        <div data-ng-view id="ng-view" class="slide-animation"></div>
+    </div>
+
+    <!--<div data-wc-overlay data-wc-overlay-delay="250">
+        <br /><img src="css/images/spinner.gif" />
+    </div>-->
+
+    
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="lib/angular-touch.js"></script>
+    <script src="lib/angular-resource.js"></script>
+    <script src="lib/angular-animate.js"></script>
+
+	<script src="js/app.js"></script>
+	
+    <script src="js/Controllers/homecontroller.js"></script>
+    <script src="js/Controllers/customerscontroller.js"></script>
+	<script src="js/Services/receptionServices.js"></script>
+  
+
+</body>
+</html>

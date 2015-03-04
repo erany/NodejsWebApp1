@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>NodejsWebApp1</Name>
+    <RootNamespace>NodejsWebApp1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d26ebe90-de8a-49cc-bc56-aaf1060da96d</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Server\server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\js\app.js" />
+    <Compile Include="app\js\Controllers\customerscontroller.js" />
+    <Compile Include="app\js\Controllers\homecontroller.js" />
+    <Compile Include="app\js\Services\rest-services.js" />
+    <Compile Include="app\lib\angular-animate.js" />
+    <Compile Include="app\lib\angular-resource.js" />
+    <Compile Include="app\lib\angular-route.js" />
+    <Compile Include="app\lib\angular-touch.js" />
+    <Compile Include="app\lib\angular.js" />
+    <Compile Include="Server\routes\clientReception.js" />
+    <Compile Include="Server\server.js" />
+    <Content Include="app\css\animations.css" />
+    <Content Include="app\css\bootstrap.css" />
+    <Content Include="app\css\bootstrap.icon-large.min.css" />
+    <Content Include="app\css\styles.css" />
+    <Content Include="app\index.html" />
+    <Content Include="app\views\customers.html" />
+    <Content Include="app\pics\amy_jones.jpg" />
+    <Content Include="app\pics\eugene_lee.jpg" />
+    <Content Include="app\pics\female.png" />
+    <Content Include="app\pics\gary_donovan.jpg" />
+    <Content Include="app\pics\james_king.jpg" />
+    <Content Include="app\pics\john_williams.jpg" />
+    <Content Include="app\pics\julie_taylor.jpg" />
+    <Content Include="app\pics\kathleen_byrne.jpg" />
+    <Content Include="app\pics\lisa_wong.jpg" />
+    <Content Include="app\pics\male.png" />
+    <Content Include="app\pics\paula_gates.jpg" />
+    <Content Include="app\pics\paul_jones.jpg" />
+    <Content Include="app\pics\people.png" />
+    <Content Include="app\pics\ray_moore.jpg" />
+    <Content Include="app\pics\steven_wells.jpg" />
+    <Content Include="app\topcoat\css\topcoat-mobile-light.css" />
+    <Content Include="app\topcoat\css\topcoat-mobile-light.min.css" />
+    <Content Include="app\topcoat\font\LICENSE.txt" />
+    <Content Include="app\topcoat\font\SourceCodePro-Black.otf" />
+    <Content Include="app\topcoat\font\SourceCodePro-Bold.otf" />
+    <Content Include="app\topcoat\font\SourceCodePro-ExtraLight.otf" />
+    <Content Include="app\topcoat\font\SourceCodePro-Light.otf" />
+    <Content Include="app\topcoat\font\SourceCodePro-Regular.otf" />
+    <Content Include="app\topcoat\font\SourceCodePro-Semibold.otf" />
+    <Content Include="app\topcoat\font\SourceSansPro-Black.otf" />
+    <Content Include="app\topcoat\font\SourceSansPro-BlackIt.otf" />
+    <Content Include="app\topcoat\font\SourceSansPro-Bold.otf" />
+    <Content Include="app\topcoat\font\SourceSansPro-BoldIt.otf" />
+    <Content Include="app\topcoat\font\SourceSansPro-ExtraLight.otf" />
+    <Content Include="app\topcoat\font\SourceSansPro-ExtraLightIt.otf" />
+    <Content Include="app\topcoat\font\SourceSansPro-It.otf" />
+    <Content Include="app\topcoat\font\SourceSansPro-Light.otf" />
+    <Content Include="app\topcoat\font\SourceSansPro-LightIt.otf" />
+    <Content Include="app\topcoat\font\SourceSansPro-Regular.otf" />
+    <Content Include="app\topcoat\font\SourceSansPro-Semibold.otf" />
+    <Content Include="app\topcoat\font\SourceSansPro-SemiboldIt.otf" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="views\index.jade" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\css\" />
+    <Folder Include="app\js\" />
+    <Folder Include="app\js\Controllers\" />
+    <Folder Include="app\js\Services\" />
+    <Folder Include="app\views\" />
+    <Folder Include="app\lib\" />
+    <Folder Include="app\pics\" />
+    <Folder Include="app\topcoat\" />
+    <Folder Include="app\topcoat\css\" />
+    <Folder Include="app\topcoat\font\" />
+    <Folder Include="Server\" />
+    <Folder Include="Server\routes\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
