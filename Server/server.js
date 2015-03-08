@@ -23,8 +23,8 @@ app.get('/', function(req,res){
     res.render('index'); 
 });
 
-app.listen(80, function () { 
-    console.log('ready on port 80'); 
+app.listen(3500, function () { 
+    console.log('ready on port 3500'); 
 }); 
 
 
