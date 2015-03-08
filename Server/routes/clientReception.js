@@ -78,7 +78,7 @@ var populateDB = function(){
     
     
     db.collection('employees' , function(err , collection){
-        collection.insert(employess , {safe:true} , function(err , result){}) ; 
+        collection.insert(employees , {safe:true} , function(err , result){}) ; 
     }); 
     
 };
